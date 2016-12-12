@@ -1,0 +1,42 @@
+$cssCore: false;
+$cssHelpers: true;
+$devMode: false;
+
+@import "EDgrid/ed-grid";
+$grey: #ccc;
+
+//main
+
+main{
+	color: #555;
+	margin-top: 2em;
+}
+
+.main-title{
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+.main-content{
+	line-height: 1.5;
+	font-size: .95em;
+}
+
+.sidebar-block{
+	border: 1px solid $grey;
+	paddig: 1em;
+	border-radius: .3em;
+
+	&_title{
+		margin: 0px;
+		font-size: 1.2em;
+	}
+
+	a{
+		color: stealblue;
+	}
+
+}
+
+@import "components/header";            // estilos header
+@import "components/footer";            // estilos base

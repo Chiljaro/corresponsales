@@ -1,0 +1,60 @@
+
+//colors
+$primary: #222;
+$secondary: #eee;
+$bp-menu: l;
+
+.main-header{
+	background: $primary;
+	.logo{	
+		display: block;
+		height: 65px;
+		margin: 7px 0;
+	}
+}
+
+//menu
+.main-menu{
+	@include edMenu($bp-menu);
+	
+	&_item{
+		@include to($bp-menu){
+			border-bottom : 1px solid rgba(#fff,.15);
+		}
+	}
+
+	&_link{
+		color: $secondary;
+		font-size: .95em;
+		display: block;
+
+		@include from($bp-menu){
+			height: 59px;
+			line-height: 59px;
+			&:hover{
+				box-shadow: 0 -3px tomato inset;
+			}
+		}
+	}
+}	
+
+.main-nav{
+	@include edNav(right,$bp-menu);
+
+	@include to($bp-menu){
+		align-self: stretch;
+		background: $primary;
+		margin-top: 59px;
+		background: lighten($primary,5);
+	}
+}
+
+.nav-toggle{
+	@include navToggle(15px,$secondary);
+	@include hideFrom($bp-menu);
+}	
+
+.menus{
+	background: #383636;
+	
+}

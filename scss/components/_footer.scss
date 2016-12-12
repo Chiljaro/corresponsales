@@ -1,0 +1,9 @@
+.main-footer{
+	@include stickyFooter;
+
+	background: $primary;
+	color: $secondary;
+	text-align: center;
+	padding: 1em 0;
+	font-size: .9em;
+}
