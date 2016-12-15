@@ -79,24 +79,19 @@ template {
 
 /* slideshow*/
 
-div.imagen {
-  width: 100%;
-  height: 100%;
-  background-size: cover;/*sólo para ejemplo*/
+
+
+.image{
+  position: relative;
 }
 
-div.info {
-  position:absolute;
-  overflow:hidden;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(31, 31, 31, 0.9);
-  opacity:0;
-  transition: opacity 0.3s;
+#info{
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    background-color: skyblue;
+    width: 100%;
 }
-
-
-
 
 #banner{
   overflow: hidden;
