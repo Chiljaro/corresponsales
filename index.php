@@ -4,9 +4,14 @@
 <section>
     <div class="gallery">
     <?php $i=0; $my_query = new WP_Query('category_name=primaria'); if ($my_query->have_posts() ) : while ($my_query->have_posts() && $i<4 ) : $my_query->the_post(); ?>
-        <div class="image"><a href="<?php the_permalink(); ?>">
-                    <?php if (has_post_thumbnail()) { the_post_thumbnail('list_articles_thumbs'); } ?>
-                    </a><!-- Una foto en la galeria-->
+        <div class="image">
+            <a href="<?php the_permalink(); ?>">
+                <?php if (has_post_thumbnail()) { the_post_thumbnail('list_articles_thumbs'); } ?>
+            </a><!-- Una foto en la galeria-->
+            <div id="info">
+                <p class="headline"><?php echo get_the_title($ID); ?></p><?php echo get_the_title($ID); ?>
+                <p class="descripcion"><?php echo get_the_date( $post_id ); ?></p>
+            </div>
         </div>
     <?php $i++; endwhile;?>
     <?php endif; ?>

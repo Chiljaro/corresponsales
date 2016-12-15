@@ -17,12 +17,12 @@
             </div>
             
 
+        <?php comments_template(); ?>
         <?php endwhile; ?>      
 
        
 
     </div>
-
 
     <?php get_sidebar('menu'); ?>
 </section>

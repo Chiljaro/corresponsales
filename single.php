@@ -52,7 +52,7 @@
 
 
 
-        <div id="disqus_thread" class="comentarios"></div>
+    <div id="disqus_thread" class="comentarios"></div>
         
         <script>
         var disqus_config = function () {
@@ -63,14 +63,13 @@
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
 
-        s.src = '//entidadesmexico.disqus.com/embed.js';
+        s.src = '//corresponsales.hmedia.mx/embed.js';
 
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-        })();
-        </script>
+        20141116        </script>
         <noscript>Porfavor habilite Javascript para poder ver los <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentarios soportados por Disqus.</a></noscript>
-
+        
        
 
     </div>

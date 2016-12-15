@@ -1,6 +1,6 @@
 </div>
 
-<footer id="contacto" class="pie">
+<footer id="contacto" class="pie main-footer">
 
 	<div class="grupo">
 		<div class="caja base-100 tablet-30 pie__direccion">
